@@ -5,7 +5,8 @@ public class CondicoesTernarias {
         //Vai analisar a nota e vai dizer se está aprovado ou não, nesse caso está reprovado
         String resultado = nota >= 7 ? "Aprovado" : (nota >= 5 && nota < 7 ? "Recuperação" :  "Reprovado");
 
-        System.out.println(resultado);
+        System.out.println(resultado); 
+        
 
     }
     
