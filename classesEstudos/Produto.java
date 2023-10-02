@@ -1,5 +1,5 @@
 package classesEstudos;
 
-public class ex001 {
+public class Produto {
     
 }
