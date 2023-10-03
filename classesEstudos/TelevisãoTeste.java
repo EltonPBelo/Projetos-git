@@ -1,6 +1,6 @@
 package classesEstudos;
 
-public class ControleTV {
+public class TelevisãoTeste {
     public static void main(String[] args) {
         
         Televisão tv = new Televisão();
