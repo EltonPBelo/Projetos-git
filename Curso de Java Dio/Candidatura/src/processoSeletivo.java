@@ -1,10 +1,12 @@
 public class processoSeletivo {
     public static void main(String[] args) {
         
-        System.out.println("Candidatura");
-
     }
-    static void analisarCandidato(Double salarioPretendido){
+
+    static void selecaoCandidatos(){}
+
+
+    static void  analisarCandidato(Double salarioPretendido){ //função pra analisar candidato
 
         Double salarioBase = 2000.0;
 
