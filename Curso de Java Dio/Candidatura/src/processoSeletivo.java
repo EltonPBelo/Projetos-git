@@ -2,32 +2,33 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class processoSeletivo {
     public static void main(String[] args) {
-        
+       selecaoCandidatos();//chamo meu medoto pra ser executado 
+       
     }
 
     static void selecaoCandidatos(){
-        String [] candidatos = {"Messi","Neymar","Haaland","Ronaldo","Coutinho","Vini Jr","Lewadowski","Belligham","Rodrygo","Pedri"};
+        String [] candidatos = {"Messi","Neymar","Haaland","Ronaldo","Coutinho","Vini Jr","Lewadowski","Belligham","Rodrygo","Pedri"};//defino uma lista com os nomes que vai de 0 até 9
 
-        int candidatosSelecionados = 0;
-        int candidatoAtual = 0;
-        Double salarioBase = 2000.0;
+        int candidatosSelecionados = 0; //vai me mostrar quantos candidatos foram aprovados pra vaga
+        int candidatoAtual = 0;//vai fazer com que os nome em minha lista saia e vá para o proximo indice
+        Double salarioBase = 2000.0;// salario que base que o programa espra receber
 
-        while(candidatosSelecionados < 5){
-            String candidato = candidatos[candidatoAtual];
-            Double salarioPretendido = valorPretendido();
+        while(candidatosSelecionados < 5){ // enquantos meus candidatos aprovados forem menor que 5 vai executar esse loop
+            String candidato = candidatos[candidatoAtual]; //var criada pra saber qual canditado vai ser analisado 
+            Double salarioPretendido = valorPretendido();//Usamos a função criada pra analisar o salario do candidato
             System.out.println("O candidato "+ candidato+" Solicitou esse salario "+salarioPretendido+"R$");
             if(salarioBase >= salarioPretendido){
                 System.out.println("O candidado "+candidato+" foi selecionado para vaga");
-                candidatosSelecionados++;
+                candidatosSelecionados++;// vai colocar na var quanto candidatos foram aprovados
 
             }
-            candidatoAtual++;
+            candidatoAtual++;// vai passar pro proximo candidato
         }
 
        
     }
-        static Double valorPretendido(){
-        return ThreadLocalRandom.current().nextDouble(1800.0,2000.0);
+    static Double valorPretendido(){
+            return ThreadLocalRandom.current().nextDouble(1800.0,2000.0);
     }
 
     static void  analisarCandidato(Double salarioPretendido){ //função pra analisar candidato
