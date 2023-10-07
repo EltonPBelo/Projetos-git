@@ -2,9 +2,21 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class processoSeletivo {
     public static void main(String[] args) {
-       selecaoCandidatos();//chamo meu medoto pra ser executado 
+      // selecaoCandidatos();//chamo meu medoto pra ser executado 
+       imprimirSelecionados();
        
     }
+
+    static void imprimirSelecionados(){
+    String [] candidatos = {"Messi","Neymar","Haaland","Ronaldo","Coutinho","Vini Jr","Lewadowski","Belligham","Rodrygo","Pedri"};//defino uma lista com os nomes que vai de 0 até 9
+        System.out.println("Imprimindo selecionados imprimindo o indice ddo elemento");
+        for(int indice = 0; indice < candidatos.length; indice++){
+            System.out.println("O candidato selecionado de Número: " +(indice+1)+" é "+candidatos[indice] );// ao usar (indice+1) esse termo na impressão minha lista vai eliminar o numero zero fazendo com que o messe fique no indice 1 na impressão 
+            
+        }
+    }
+
+
 
     static void selecaoCandidatos(){
         String [] candidatos = {"Messi","Neymar","Haaland","Ronaldo","Coutinho","Vini Jr","Lewadowski","Belligham","Rodrygo","Pedri"};//defino uma lista com os nomes que vai de 0 até 9
@@ -28,7 +40,7 @@ public class processoSeletivo {
        
     }
     static Double valorPretendido(){
-            return ThreadLocalRandom.current().nextDouble(1800.0,2000.0);
+            return ThreadLocalRandom.current().nextDouble(1800.0,3000.0);
     }
 
     static void  analisarCandidato(Double salarioPretendido){ //função pra analisar candidato
