@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class contador {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-
+//projeto dio
         int parametroUm = input.nextInt();
         int parametroDois = input.nextInt();
 
