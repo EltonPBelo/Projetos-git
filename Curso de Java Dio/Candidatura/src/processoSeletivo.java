@@ -2,7 +2,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class processoSeletivo {
     public static void main(String[] args) {
-      // selecaoCandidatos();//chamo meu medoto pra ser executado 
+      // selecaoCandidatos();//chamo meu medoto pra ser executado pois ele e void
        imprimirSelecionados();
        
     }

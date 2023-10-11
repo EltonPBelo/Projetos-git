@@ -5,6 +5,8 @@ public class TelevisãoTeste {
         
         Televisão tv = new Televisão();
 
+
+
         System.out.println(tv.ligada);
         tv.canal = 10;
         tv.ligada = true;
