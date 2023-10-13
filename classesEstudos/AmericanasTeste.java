@@ -43,11 +43,11 @@ public class AmericanasTeste {
 
         
             
-            while (respostaParcelamento > 12 || respostaParcelamento < 1){
+                while (respostaParcelamento > 12 || respostaParcelamento < 1){
                 System.out.println("Você digitou um valor indisponivél de parcelamento tente de novo");
                 respostaParcelamento = coletarDados.nextInt();
 
-                if(respostaParcelamento > 0 || respostaParcelamento < 12){
+                if(respostaParcelamento <= 12){
                 Double cartao = produtoFinal/respostaParcelamento;
                 System.out.printf("O valor a ser paga do seu %s por mês por um total de %d meses é de %.2f",produtos.eletronico,respostaParcelamento, cartao);
                 }
