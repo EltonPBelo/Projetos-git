@@ -9,6 +9,8 @@ public class AmericanasTeste {
 
         Americanas produtos = new Americanas();
 
+        //informaçãoes do produto
+
         produtos.eletronico = "Iphone 15";
         produtos.preco = 8000.0;
         produtos.desconto = 0.05;
@@ -16,8 +18,8 @@ public class AmericanasTeste {
         Double produtoFinal = produtos.preco - (produtos.preco * produtos.desconto);
 
         System.out.println(produtos.eletronico);
-        System.out.println(produtos.preco);
-        System.out.println(produtos.desconto);
+        System.out.println("Valor do produto "+produtos.preco);
+        System.out.println("Valor do desconto "+produtos.desconto);
 
         
         System.out.printf("O seu %s ficou por %.2f\n", produtos.eletronico, produtoFinal);
