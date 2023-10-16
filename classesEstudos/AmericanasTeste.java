@@ -60,10 +60,3 @@ public class AmericanasTeste {
         coletarDados.close();
     }
 }
-
-//if(respostaParcelamento > 12 || respostaParcelamento < 1){}
-//do {
-//respostaParcelamento = coletarDados.nextInt();
-//Double cartao = produtoFinal/respostaParcelamento;
-//System.out.printf("O valor a ser paga do seu %s por mês por um total de %d meses é de %.2f",produtos.eletronico,respostaParcelamento, cartao);
-//} while (respostaParcelamento > 12 || respostaParcelamento < 1);

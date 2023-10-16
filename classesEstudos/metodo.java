@@ -8,7 +8,4 @@ public class metodo {
         return resultado; // uso o return pra ele retornar o resultado do meu metodo
     
     }
-
-    class calcular{
-        int somar(int a, int b){}
-    }
+}
