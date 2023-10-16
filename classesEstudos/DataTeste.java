@@ -13,9 +13,8 @@ public class DataTeste {
         Calendario.mes = input.nextLine();
         Calendario.ano = input.nextInt();
         
-        System.out.println("Dia: "+ Calendario.dia);
-        System.out.println("Do mês de: "+Calendario.mes);
-        System.out.println("Do ano de : "+Calendario.ano);
+        System.out.println(Calendario.obterDataFormatda());
+        System.out.println();
 
         input.close();
        

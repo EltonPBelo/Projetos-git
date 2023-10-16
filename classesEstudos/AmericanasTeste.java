@@ -19,7 +19,7 @@ public class AmericanasTeste {
 
         System.out.println(produtos.eletronico);
         System.out.println("Valor do produto "+produtos.preco);
-        System.out.println("Valor do desconto "+produtos.desconto);
+        System.out.println("Valor do desconto "+produtos.precoComDesconto());// definir no meu metodo(função) quais dados ele vai coletar e oque fazer com ele
 
         
         System.out.printf("O seu %s ficou por %.2f\n", produtos.eletronico, produtoFinal);
@@ -29,7 +29,7 @@ public class AmericanasTeste {
         String parcelamento = coletarDados.nextLine();
 
 
-        //vai armazenar a quantidade de percelamento parcelamento
+        //vai armazenar a quantidade de percelamento
         System.out.println("Em quantas vezes deseja parcelar, parcelamos em até 12x com juros no parcelamento de 8x "); 
         int respostaParcelamento = coletarDados.nextInt();
 

@@ -6,4 +6,8 @@ public class Americanas {
     Double preco;
     Double desconto;
 
+    Double precoComDesconto(){
+        return preco = preco - (preco * desconto);
+    }
+
 }
