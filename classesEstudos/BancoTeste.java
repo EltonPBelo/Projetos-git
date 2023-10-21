@@ -6,11 +6,12 @@ public class BancoTeste {
     public static void main(String[] args) {
 
 
-        //tentaar usar o Do nesse código
+     
 
         Scanner input = new Scanner(System.in);
 
-    Banco Bradesco = new Banco();
+        Banco Bradesco = new Banco();
+    
 
     System.out.print("Olá bem vindo ao Bradesco, diga o seu nome: ");
     Bradesco.nome = input.nextLine();
