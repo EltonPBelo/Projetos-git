@@ -14,9 +14,35 @@ public class Caneta {
         System.out.println("Porcentagem da carga "+ this.carga+"%");
     }
 
-    void rabiscar(){}
+    void rabiscar(){
+        if(this.tampada == true){
+            System.out.println("ERROR Impossivel rabiscar pois a caneta está tampada");
+        }
+        else{
+            System.out.println("Rabiscando...");
+            this.pausar();
+            System.out.println("Rabiscando....");
+            this.pausar();
+            System.out.println("rabiscando........");
+            this.pausar();
+            System.out.println("Opa um desenho foi formado");
+        }
+    }
 
-    void tampar(){}
+    void tampar(){
+        this.tampada = true;
+    }
 
-    void destampar(){}
+    void destampar(){
+        this.tampada = false;
+    }
+
+    void pausar(){
+        try {
+            // Coloque a thread atual para dormir por 1 segundo (1000 milissegundos)
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            // Lidar com exceções, se necessário
+        }
+    }
 }

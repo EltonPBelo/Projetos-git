@@ -11,7 +11,20 @@ public class CanetaTeste {
          c1.carga = 84;
 
          //vai exibir o estatus do meu objeto c1
-         c1.status();
+         //c1.status();
+         c1.destampar();
+         c1.rabiscar();
+
+         Caneta c2 = new Caneta();
+         c2.nome = "Caneta faber castel";
+         c2.cor = "preta";
+         c2.tampada = true;
+         c2.ponta = 1.0;
+         c2.carga = 54;
+
+         c2.status();
+         c2.tampar();
+         c2.rabiscar();
 
     }
 }
