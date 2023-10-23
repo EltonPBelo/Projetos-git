@@ -2,19 +2,19 @@ package classesEstudos;
 
 public class Caneta {
     
-    String nome;
-    String cor;
-    int carga;
-    Double ponta;
-    boolean tampada;
+    public String nome;
+    public String cor;
+    protected int carga;
+    private  Double ponta;
+    private boolean tampada;
 
-    void status(){
+    public void status(){
         System.out.println("Uma caneta da cor "+ this.cor);
         System.out.println("Está tampada "+ this.tampada);
         System.out.println("Porcentagem da carga "+ this.carga+"%");
     }
 
-    void rabiscar(){
+    protected void rabiscar(){
         if(this.tampada == true){
             System.out.println("ERROR Impossivel rabiscar pois a caneta está tampada");
         }
@@ -29,11 +29,13 @@ public class Caneta {
         }
     }
 
-    void tampar(){
+    public void tampar(){
         this.tampada = true;
     }
-
-    void destampar(){
+        // por mais que tampada seja privada eu não posso mexer com ela fora da classe, no entando na classe eu posso,
+        //fazendo com que esse atributo que ta privado posse ser acessado fora dessa classe pois está em um metodo publico, porem eu nao consigo acessar
+        // o tampada fora dessa classe
+    public void destampar(){ 
         this.tampada = false;
     }
 
