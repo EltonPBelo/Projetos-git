@@ -1,6 +1,6 @@
 package classesEstudos;
 import java.util.Random;
-
+import java.util.Scanner;
 public class NeymarDecisoes {
 
     public String time;
@@ -22,6 +22,8 @@ public class NeymarDecisoes {
         String timeSorteado = nomeTime[indiceSorteado];
 
         System.out.println("Você recebeu uma proposta do "+timeSorteado);
+        System.out.println("Deseja aceitar?\nDigite 1 para 'aceitar'\nE digite 2 para 'recusar'");
+        
 
        
         
