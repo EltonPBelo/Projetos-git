@@ -11,7 +11,10 @@ public class onibus {
     
         // Construtor, getters e setters
     }
-    
+
+        public void setMotorista(String nome, String numeroHabilitacao, int id){
+            this.nome = nome;
+        }
     class Passageiro {
         private String nome;
         private String registroIdentidade;
