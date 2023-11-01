@@ -1,6 +1,6 @@
 package classesEstudos;
 
-public class lapis {
+public class lapis extends Caneta{
 
     private String modelo;
     private String cor;
@@ -40,6 +40,11 @@ public class lapis {
         System.out.println(this.getModelo());
         System.out.println(this.getCor());
         System.out.println(this.getPonta());
+    }
+    @Override
+    void pausar() {
+        // TODO Auto-generated method stub
+        super.pausar();
     }
     
 }
