@@ -4,7 +4,6 @@ public class Conta {
     private Double saldo; //saldo atual da conta
     private int numero; //numero atual da conta
 
-    //construtor da classe
     // Construtor da classe
     public Conta(int num) {    
 	    this.saldo = 0.0;
@@ -35,7 +34,7 @@ public class Conta {
     }
     
     // Retorna o número da Conta
-    public double getNumeroConta() {
+    public int getNumeroConta() {
 	    return this.numero;
     }
     
