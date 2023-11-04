@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CadastroDeViajens {
-     private List<Viagem> totalDeViagens;
+    private List<Viagem> totalDeViagens;
     private int totalDePassageiros;
     private double totalArrecadado; 
     
@@ -47,4 +47,6 @@ public class CadastroDeViajens {
         }
 
         System.out.println("Total Arrecadado: R$ " + this.calcularArrecadacao());
-}}
+    }
+
+    }

@@ -19,7 +19,7 @@ public class CadastroDeOnibus {
     }
     
     public void imprimeTodosOsOnibusDisponiveis(){
-        for (Onibus index : onibusDisponiveis){
+        for (Onibus index : this.onibusDisponiveis){
             System.out.println(index.toString());
         }
     }
