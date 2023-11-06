@@ -2,9 +2,9 @@ package classesEstudos;
 
 public class Data {
 
-    int dia = 1;
-    String mes = "1";
-    int ano = 1970;
+    int dia;
+    String mes;
+    int ano;
 
     Data(int Dia,String mesA,int ano1) {
         dia = Dia;
@@ -13,7 +13,10 @@ public class Data {
     }
 
     Data(){
-        
+    int dia = 1;
+    String mes = "1";
+    int ano = 1970;
+
     }
 
     String obterDataFormatda (){

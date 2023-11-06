@@ -9,5 +9,8 @@ public class Americanas {
     Double precoComDesconto(){
         return preco = preco - (preco * desconto);
     }
+    static Double somaP(Double a , Double b){
+        return a+b;
+    }
 
 }

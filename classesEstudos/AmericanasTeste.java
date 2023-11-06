@@ -11,6 +11,8 @@ public class AmericanasTeste {
 
         //informaçãoes do produto
 
+       
+
         produtos.eletronico = "Iphone 15";
         produtos.preco = 8000.0;
         produtos.desconto = 0.05;
