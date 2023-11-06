@@ -2,9 +2,19 @@ package classesEstudos;
 
 public class Data {
 
-    int dia;
-    String mes;
-    int ano;
+    int dia = 1;
+    String mes = "1";
+    int ano = 1970;
+
+    Data(int Dia,String mesA,int ano1) {
+        dia = Dia;
+        mes = mesA;
+        ano = ano1;
+    }
+
+    Data(){
+        
+    }
 
     String obterDataFormatda (){
         return dia+"/"+ mes + "/" + ano;// comom eu estou mexendo com uma string eu posso incrementar testos e simbolos e etc /
