@@ -10,6 +10,8 @@ private String nomeVeiculo;
 private String AnoFabricacao;
 private Double Fipe;
 private boolean Motor;
+private int velocimetro;
+private int velocidadeMaxima = 200;
 
 
 public void setNomeCarro(String nomeCarro){
@@ -57,5 +59,36 @@ public void InformacaoCarro(){
 
 }
 
+public boolean LigarCarro(){
+    return this.Motor = true;
+}
+public boolean DesligarCarro(){
+    return this.Motor = false;
 
 }
+
+public void acelerarCarro (){
+    if (Motor == false) {
+        System.out.println("impossivel acelerar, o carro está desligado!");
+    }
+    else if(Motor == true){ 
+        this.velocimetro += 10;
+        System.out.println("Aceleraandoo........\n A velocidade do carro está há "+velocimetro+" KM/H");
+        if (velocimetro >= velocidadeMaxima) {// se a minha velocidade for menor que a velocidade
+            velocimetro = velocidadeMaxima; // Limita a velocidade máxima
+            System.out.println("Velocidade máxima atingida: " + velocidadeMaxima + " KM/H");
+        } else {
+            System.out.println("Carro acelerado! Velocidade atual: " + velocimetro + " KM/H");
+        }
+    } else {
+        System.out.println("Velocidade máxima atingida: " + velocidadeMaxima + " KM/H");
+    }
+    }
+    
+
+}
+
+
+
+
+

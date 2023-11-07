@@ -18,6 +18,9 @@ public class CarroTeste {
         //Vai imprimir o valor do meu ipva
         System.out.println(v1.CalcularIpva(0.04)+"R$");
         System.out.println(v1.getNomeCarro());
+        v1.LigarCarro();
+        v1.acelerarCarro();
+
 
 
     }
