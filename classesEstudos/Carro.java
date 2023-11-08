@@ -13,13 +13,17 @@ private Double Fipe;
 private boolean Motor;
 private int velocimetro;
 private int velocidadeMaxima = 200;
+private String CNH;
 
 //metodo construtor
-public Carro(String cor,String nomeProprietario){
+public Carro(String cor,String nomeProprietario,String CnhMotorista){
     this.Motor = false;
-    nomeDono = nomeProprietario;
+    this.nomeDono = nomeProprietario;
+    this.CNH = CnhMotorista;
     
 }
+
+
 // metodo acessero set pra dizer o nome do carro
 public void setNomeCarro(String nomeCarro){
     this.nomeVeiculo = nomeCarro;
@@ -27,6 +31,13 @@ public void setNomeCarro(String nomeCarro){
 //metodo pra puxar o nome do carro
 public String getNomeCarro(){
     return this.nomeVeiculo;
+}
+
+public void setNumHabilitacao(String numHabilitacao){
+    CNH = numHabilitacao;
+}
+public String getHabilitacaoCnh(){
+    return this.CNH;
 }
 
 //metodo acessor pra dizer o valor da fipe
@@ -60,6 +71,8 @@ public Double getIpva(){
 public void InformacaoCarro(){
 
     System.out.println("O seu carro é um "+this.nomeVeiculo);
+    System.out.println("O dono do veiculo é "+this.nomeDono);
+    System.out.println("O número da carteira de motorista é "+this.CNH);
 
 }
 // função para ligar o carro
