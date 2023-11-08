@@ -10,6 +10,7 @@ private String nomeVeiculo;
 private String nomeDono;
 private String AnoFabricacao;
 private Double Fipe;
+private Double IpvaCarro;
 private boolean Motor;
 private int velocimetro;
 private int velocidadeMaxima = 200;
@@ -59,8 +60,9 @@ public String getAnoFabricacao() {
 }
 //função publica pra calcular o valor do ipva
 public Double CalcularIpva(Double ipva){
-
-    return this.Fipe*ipva;
+    this.IpvaCarro = ipva;
+    this.IpvaCarro =this.IpvaCarro*this.Fipe;
+    return this.IpvaCarro;
 
 }
 //metodo acessor pra puxar o ipva
@@ -71,8 +73,15 @@ public Double getIpva(){
 public void InformacaoCarro(){
 
     System.out.println("O seu carro é um "+this.nomeVeiculo);
+    System.out.println("Da cor "+this.Cor);
     System.out.println("O dono do veiculo é "+this.nomeDono);
     System.out.println("O número da carteira de motorista é "+this.CNH);
+    System.out.printf("valor a ser pago de ipva é %.2f",this.IpvaCarro);
+    if (Motor == true) {
+        System.out.println("e o motor do veiculo está ligado");
+    }else {System.out.println("O motor do veiculo encontra-se desligado");}
+    
+    
 
 }
 // função para ligar o carro

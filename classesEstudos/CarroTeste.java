@@ -3,27 +3,26 @@ package classesEstudos;
 public class CarroTeste {
     public static void main(String[] args) {
         
-        Carro v1 = new Carro("Preta","Irineu");
+        Carro v1 = new Carro("Amarelo","Irineu","15624-99554");
+
+        //etapa de coleta de informacoes
 
         v1.setNomeCarro("Corsa");
-        
-        //vai pegar o parametro do valor do meu carro
-        v1.setFipe(100000.0);
+        v1.setAnoFabricacao("2010/2001");
+        v1.setFipe(125000.00);
+        v1.CalcularIpva(0.02);
+        v1.InformacaoCarro();
+        System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
 
-        //vou coletar o dado coletado do setFipe e imprimir ele
-        v1.getFipe();
-        //System.out.println(v1.getFipe());
-        
+        //parte funcional
 
-        //Vai imprimir o valor do meu ipva
-        System.out.println(v1.CalcularIpva(0.04)+"R$");
-        System.out.println(v1.getNomeCarro());
-        v1.LigarCarro();
-        v1.acelerarCarro();
-        v1.acelerarCarro();
-        v1.freioParcial();
-        v1.acelerarCarro();
-        
+    v1.LigarCarro();
+    v1.acelerarCarro();
+    v1.acelerarCarro();
+    v1.freioParcial();
+    v1.acelerarCarro();
+    v1.acelerarCarro();
+    v1.frearCarroEmergencial();
 
     }
 }
