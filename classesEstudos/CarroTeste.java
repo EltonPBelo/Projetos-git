@@ -3,7 +3,7 @@ package classesEstudos;
 public class CarroTeste {
     public static void main(String[] args) {
         
-        Carro v1 = new Carro("Preta");
+        Carro v1 = new Carro("Preta","Irineu");
 
         v1.setNomeCarro("Corsa");
         
@@ -20,8 +20,10 @@ public class CarroTeste {
         System.out.println(v1.getNomeCarro());
         v1.LigarCarro();
         v1.acelerarCarro();
-
-
+        v1.acelerarCarro();
+        v1.freioParcial();
+        v1.acelerarCarro();
+        
 
     }
 }

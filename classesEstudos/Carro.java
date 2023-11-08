@@ -7,6 +7,7 @@ Implemente métodos para ligar o carro, desligar o carro, acelerar e frear. */
 
 public String Cor;
 private String nomeVeiculo;
+private String nomeDono;
 private String AnoFabricacao;
 private Double Fipe;
 private boolean Motor;
@@ -14,8 +15,9 @@ private int velocimetro;
 private int velocidadeMaxima = 200;
 
 //metodo construtor
-public Carro(String cor){
+public Carro(String cor,String nomeProprietario){
     this.Motor = false;
+    nomeDono = nomeProprietario;
     
 }
 // metodo acessero set pra dizer o nome do carro
