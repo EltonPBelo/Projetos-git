@@ -77,7 +77,7 @@ public void acelerarCarro (){
     }
     else if(Motor == true){ 
         this.velocimetro += 10;
-        System.out.println("Aceleraandoo........\n A velocidade do carro está há "+velocimetro+" KM/H");
+        System.out.println("Aceleraandoo........A velocidade do carro está há "+velocimetro+" KM/H");
         if (velocimetro >= velocidadeMaxima) {// se a minha velocidade for menor que a velocidade
             velocimetro = velocidadeMaxima; // Limita a velocidade máxima
             System.out.println("Velocidade máxima atingida: " + velocidadeMaxima + " KM/H");
@@ -88,7 +88,23 @@ public void acelerarCarro (){
         System.out.println("Velocidade máxima atingida: " + velocidadeMaxima + " KM/H");
     }
     }
-    
+//função para freiar o carro totalmente    
+public void frearCarroEmergencial(){
+    if (Motor==true && velocimetro>1) {
+      this.velocimetro = 0;
+      System.out.println("Carro foi freado sua velocidade atual "+this.velocimetro+" KM/H");
+    }
+}
+//função pra freiar o carro parcialmente
+public void freioParcial(){
+    if (Motor==true && velocimetro>1) {
+        this.velocimetro -= 15;
+        System.out.println("Carro foi freado sua velocidade atual "+this.velocimetro+" KM/H");
+}
+
+}
+
+
 
 }
 
