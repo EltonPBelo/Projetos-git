@@ -1,35 +1,22 @@
 package Banco;
 
 public class ContaPoupanca extends Conta{
-    private Double taxaRendimento;
+    private double juros;
 
-    ContaPoupanca(int num, Double taxa){
+    public ContaPoupanca(int num, double juros) {
         super(num);
-        if (!this.setTaxaRendimento(taxa)); {
-            this.taxaRendimento = 0.0;
-        }
-
+        this.juros = juros;
     }
 
-    public boolean setTaxaRendimento(Double taxa){
-        if(taxa > 0 && taxa <1){
-            this.taxaRendimento = taxa;
-            return true;
-        }
-            return false; }
+    public void adicionarRendimentos() {
+        double rendimento = getSaldo() * (juros / 100);
+        deposito(rendimento);
+    }
 
-        public Double getTaxaRendimento(){
-            return this.taxaRendimento;
-
-        }
-
-        public void RendimentoConta(){
-            Double rendimento = getSaldo() * this.taxaRendimento;
-            super.deposito(rendimento);
-         
-
-        }
-        
+    @Override
+    public String toString() {
+        return super.toString() + " (Conta Poupança)";
+    }
         
     }
 
