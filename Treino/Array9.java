@@ -1,5 +1,7 @@
 package Treino;
 
+import java.text.DecimalFormat;
+
 public class Array9 {
     public static void main(String[] args) {
         
@@ -7,9 +9,12 @@ public class Array9 {
         float[] VetorB = {110,74,5,4,76};
         float[] VetorC = new float[VetorA.length];
 
+        DecimalFormat df = new DecimalFormat("#.##");
+
         for(int i=0; i<VetorC.length; i++){
             VetorC[i] = VetorA[i] / VetorB[i];
-            System.out.println(VetorC[i]);
+            String valorf = df.format(VetorC[i]);
+            System.out.println(valorf);
         }
 
     }

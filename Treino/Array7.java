@@ -23,12 +23,12 @@ public class Array7 {
         }
         System.out.println("Vetor C");
         for(int i = 0; i < VetorC.length; i++){
-        System.out.println(VetorC[i]);
-        VetorC[i] = VetorA[i]-VetorB[i];// Posição I do meu vetor c vi ser igual a posição i do vetor a - a i do vetor b
+            VetorC[i] = VetorA[i]-VetorB[i];// Posição I do meu vetor c vi ser igual a posição i do vetor a - a i do vetor b
+            System.out.println(VetorC[i]);
         /*
         * Nao importa quantas msg ou a posição desse bloco
-          VetorC[i] = VetorA[i]-VetorB[i];// Posição I do meu vetor c vi ser igual a posição i do vetor a - a i do vetor b
-          se ele estiver no meu for dentro do bloco ele vai ser iterado de um em um na suas casas pois é o valor de I vai fazer as iterações
+          VetorC[i] = VetorA[i]-VetorB[i];// Posição I do meu vetor c vi ser igual a posição i do vetorA a e do vetor b
+          se ele estiver no meu for() dentro do bloco ele vai ser iterado de um em um na suas casas pois é o valor de I vai fazer as iterações
          */
     }
        
