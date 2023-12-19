@@ -7,8 +7,11 @@ public class Array19 {
         
         Scanner input = new Scanner(System.in);
 
+        // Criação de arrays pra armazenar a nota
         double[] notas1 = new double[5];
         double[] notas2 = new double[notas1.length];
+        
+        // Criação de arrays pra armazenar a media dos resultados
         double[] resultados = new double[notas1.length];
 
         for(int i = 0; i < notas1.length; i++) {
