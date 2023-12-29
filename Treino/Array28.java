@@ -16,7 +16,8 @@ for(int i=0; i<vetorA.length; i++){
     System.out.print(vetorA[i]+"| ");
 }
 System.out.println("Vetor B");
-for(int i = vetorB.length-1; i>=0; i--){
+for(int i = vetorB.length-1; i>=0; i--){ //essa laço for vai fazer com que a iteração começe pelo ultimo valor por isso vetorB.leghth -1,
+//e vai decrementar -1 em cada iteração por isso o i--
     System.out.print(vetorB[i]+"| ");
 }
 
