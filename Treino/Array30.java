@@ -36,11 +36,11 @@ A, respectivamente. */
             System.out.print(vetorA[i] +"| ");
          }
         System.out.println("\nVetor B");
-         for(int i = 0 ; i<indiceB ; i++){
+         for(int i = 0 ; i<indiceB ; i++){//faz com que a iteração pare e não mostre as casas vazias
             System.out.print(vetorB[i] +"| ");
          }
         System.out.println("\nVetor C");
-         for(int i = 0 ; i<vetorA.length ; i++){
+         for(int i = 0 ; i<vetorC.length ; i++){//  i<vetorA.length vai até o final da iteração e mostra as casa vazias
             System.out.print(vetorC[i] +"| ");
          }
     }
