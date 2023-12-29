@@ -49,7 +49,7 @@ A, respectivamente. */
 
 /*EXPLICAÇÃO DO chatGPT
 
-Seu código faz exatamente o que você descreveu nos comentários.
+ Seu código faz exatamente o que você descreveu nos comentários.
  Ele cria dois vetores, vetorB e vetorC, para armazenar os valores pares e ímpares do vetor vetorA, respectivamente. 
  Em seguida, ele percorre o vetor vetorA, verifica se cada elemento é par ou ímpar e os armazena nos vetores vetorB e vetorC de acordo.
   Finalmente, ele imprime os três vetores */
