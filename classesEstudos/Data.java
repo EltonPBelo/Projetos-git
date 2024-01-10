@@ -13,9 +13,10 @@ public class Data {
     }
 
     Data(){
-    int dia = 1;
-    String mes = "1";
-    int ano = 1970;
+    //int dia = 1;
+    //String mes = "1";
+    //int ano = 1970;
+    this(10,"julho", 2000);
 
     }
 

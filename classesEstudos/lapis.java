@@ -2,7 +2,7 @@ package classesEstudos;
 
 public class lapis extends Caneta{
 
-    private String modelo;
+    private  String modelo;
     private String cor;
     private Double ponta;
 
