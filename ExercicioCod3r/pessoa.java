@@ -2,7 +2,7 @@ package ExercicioCod3r;
 
 public class pessoa {
     
-    static String nome = null;
+    String nome = null;
     double peso = 0;
 
     public pessoa(String nome, double peso){
