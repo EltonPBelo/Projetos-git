@@ -6,7 +6,8 @@ public class DataTeste {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        Data Calendario = new Data(10,"11",1999);
+        Data Calendario = new Data(10,11,1999);
+        Data Calendario1 = new Data();
 
         //System.out.println("Digite o dia: ");
         //Calendario.dia = input.nextInt();
@@ -19,9 +20,11 @@ public class DataTeste {
        // Calendario.ano = input.nextInt();
         
         System.out.println(Calendario.obterDataFormatda());
-        System.out.println(Calendario.obterDataFormatada2());
+        System.out.println(Calendario1.DataFormatada2());
 
         input.close();
+
+
        
     }
 }
