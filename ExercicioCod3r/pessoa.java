@@ -32,6 +32,10 @@ public class pessoa {
         System.out.printf("Olá me chamo %s e tenho %.2f\n",nome, peso);
     }
 
+    String satisfeito(){
+        return "Estou satisfeito e mais gordo";
+    }
+
     void pausaDramatica(){
         try {
             // Pausa a execução por 2 segundos (2000 milissegundos)

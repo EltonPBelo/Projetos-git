@@ -21,6 +21,7 @@ public class jantar {
 
         //p1.pausaDramatica();
         p1.apresentar();
+        System.out.println(p1.satisfeito());
 
 
     }
