@@ -21,5 +21,21 @@ public class AprendendoArray {
         for(int i = 0; i < diasDaSemana.length ; i++){
             System.out.println(diasDaSemana[i]);
         }
+
+        int v = 10;
+        int[] a = new int[10];
+
+        for(int i = 0; i < a.length; i++){
+            a[i] = v += 1;
+
+        }
+System.out.println("FOReach");
+        for(int as : a){
+            System.out.println(as);
+        }
+
+
+
+
     }
 }
