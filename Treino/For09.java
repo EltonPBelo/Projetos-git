@@ -6,7 +6,7 @@ public class For09 {
     public static void main(String[] args) {
 
         //--> criação do scanner pra coletar dados via teclado
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);//a
 
         System.out.print("Informe quantas notas serão armazenadas e calculadas a média: ");
         int valoresNotas = input.nextInt();//Valor do tipo inteiro que vai definir a quantidade de casas para armazenar notas no array
