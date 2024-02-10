@@ -10,17 +10,17 @@ public class MatrizExercicio {
 qual é o maior e o menor valor da coluna 7. */
         
         int [][] matrizM = new int[10][10];
-        int menorLinha5 = 0;
+        int menorLinha5 = 101; //como estamos indo de 0 até 100 colocar 101 fai fazer com que o programa busque o menor numeor de 101 pra baixo
         int maiorLinha5 = 0;
         int maiorValColuna7 = 0; 
-        int menorValColuna7 = 0; 
+        int menorValColuna7 = 101; 
 
         Random random = new Random();
 
         //Atribuindo os valores aleatorios na matriz 10x10
         for(int i = 0; i < matrizM.length; i++){
             for(int j = 0; j < matrizM[i].length; j++){
-                matrizM[i][j] = random.nextInt(10);
+                matrizM[i][j] = random.nextInt(100)+1;
             }
         }
 
@@ -60,7 +60,7 @@ qual é o maior e o menor valor da coluna 7. */
         System.out.println("Maior valor da linha 5: " + maiorLinha5);
         System.out.println("Menor valor da linha 5: " + menorLinha5);
         System.out.println("Maior valor da coluna 7: " + maiorValColuna7);
-        System.out.println("Maior valor da coluna 7: " + menorValColuna7);
+        System.out.println("Menor valor da coluna 7: " + menorValColuna7);
 
     }
 }
