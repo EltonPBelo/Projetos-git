@@ -27,7 +27,7 @@ qual é o maior e o menor valor da coluna 7. */
         //Imprimindo os valores da matriz 10x10 gerado por valores aleatorios
         for(int i = 0; i < matrizM.length; i++){
             for(int j = 0; j < matrizM[i].length; j++){
-                System.out.print(matrizM[i][j]+" | ");
+                System.out.print(matrizM[i][j]+"| ");
             }
             System.out.println();
         }
